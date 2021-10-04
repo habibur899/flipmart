@@ -1,0 +1,79 @@
+/*
+    All WooCommerce Custom Css Here
+*/
+
+/*
+    Shop page product review
+*/
+.star-rating span {
+    color: #ffc809;
+}
+
+/*
+    Shop page product color and alignment
+
+*/
+
+.woocommerce-loop-product__title {
+    font-size: 14px;
+}
+
+/*
+    Shop page product color and alignment
+*/
+.woocommerce ul.products li.product .price {
+    color: #0c0c0c;
+    font-size: 14px;
+}
+
+.woocommerce ul.products li.product .price ins {
+    text-decoration: none;
+}
+
+.price-before-discount del {
+    width: 75%;
+    float: right;
+}
+
+/*
+Shop page pagination css
+*/
+
+.pagination-container ul li a.prev, .pagination-container ul li a.next, .pagination-container ul li .current {
+    background: none repeat scroll 0 0 #dddddd;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0px 8px;
+    color: #fff;
+}
+
+.pagination-container ul li a.prev:hover, .pagination-container ul li a.next:hover, .pagination-container ul li .current {
+    color: #fff;
+    background: #333333;
+}
+
+/*
+Woocommerce show per page color/font
+*/
+
+.dropdown form select.sortby, form.woocommerce-ordering select.orderby {
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 4px 12px;
+    background: #fff;
+    font-size: 13px;
+}
+
+/*
+Woocommerce toggle button color
+*/
+.gridlist-toggle {
+    padding: 0px !important;
+}
+
+.filters-container .nav-tabs.nav-tab-box li a.active .icon {
+    color: #333333;
+}

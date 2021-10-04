@@ -39,6 +39,13 @@ if ( ! function_exists( 'flipmart_setup' ) ) :
 		 * provide it for us.
 		 */
 		add_theme_support( 'title-tag' );
+		/*
+		 * WooCommerce theme support
+		 * */
+		add_theme_support( 'woocommerce' );
+		add_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support( 'wc-product-gallery-lightbox' );
+		add_theme_support( 'wc-product-gallery-slider' );
 
 		/**
 		 * Add post-formats support.
@@ -152,6 +159,7 @@ function flipmart_asset_scripts() {
 	wp_enqueue_style( 'roboto-css', '//fonts.googleapis.com/css?family=Roboto:300,400,500,700' );
 	wp_enqueue_style( 'opensans-css', '//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' );
 	wp_enqueue_style( 'montserrat-css', '//fonts.googleapis.com/css?family=Montserrat:400,700' );
+	wp_enqueue_style( 'woocommerce-css', get_template_directory_uri() . '/assets/css/woocommerce.css', array(), FLIPMART_VERSION, 'all' );
 	wp_enqueue_style( 'main-style', get_stylesheet_uri(), array(), FLIPMART_VERSION, 'all' );
 
 	//JS
@@ -172,3 +180,14 @@ function flipmart_asset_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'flipmart_asset_scripts' );
+
+/*
+ * WooCommerce custom functions collections
+*/
+
+require_once 'inc/woocommerce-all-functions.php';
+
+/*
+ * Tgm plugin activation require
+ * */
+require_once 'inc/tgm-config.php';

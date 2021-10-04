@@ -1460,7 +1460,7 @@ a {
     background: rgba(0, 0, 0, 0);
 }
 
-header {
+.header-bg {
     background: #333333
 }
 
@@ -4214,12 +4214,14 @@ age-container #owl-main .owl-next {
     margin-right: -4px;
     padding: 0px;
 }
-
+.breadcrumb ul li:last-child{
+    color: #157ed2;
+}
 .breadcrumb ul li:last-child:after {
     content: "";
 }
 
-.breadcrumb ul li a {
+.breadcrumb ul li {
     color: #666666;
     font-family: 'Open Sans', sans-serif, sans-serif;
     font-size: 12px;

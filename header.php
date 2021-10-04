@@ -9,7 +9,7 @@
 </head>
 <body <?php body_class( array( 'cnt-home' ) ); ?>>
 <!-- ============================================== HEADER ============================================== -->
-<header class="header-style-1">
+<header class="header-bg header-style-1">
 
     <!-- ============================================== TOP MENU ============================================== -->
     <div class="top-bar animate-dropdown">
