@@ -77,3 +77,36 @@ Woocommerce toggle button color
 .filters-container .nav-tabs.nav-tab-box li a.active .icon {
     color: #333333;
 }
+
+/*
+Single product page layout change
+*/
+
+.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
+    width: 42%;
+}
+
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+    width: 54%;
+}
+
+.woocommerce ul.products li.product a img {
+    border: 1px solid #eaeaea;
+}
+
+/*
+Single product title
+*/
+.summary .name {
+    margin-top: 0px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.woocommerce-product-rating .reviews a.lnk {
+    color: #aaaaaa;
+}
+
+.woocommerce-product-rating .reviews a.lnk:hover {
+    color: #333333;
+}
